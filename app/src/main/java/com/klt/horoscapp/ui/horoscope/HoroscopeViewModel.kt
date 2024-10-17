@@ -16,7 +16,7 @@ class HoroscopeViewModel @Inject constructor() : ViewModel() {
 
     init {
         _horoscope.value = listOf(
-            Aries, Taurus, Gemini, Cancer
+            Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces
         )
     }
 
