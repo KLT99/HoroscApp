@@ -11,7 +11,7 @@ class HoroscopeAdapter(private var horoscopeList: List<HoroscopeInfo> = emptyLis
 
     fun updateList(list: List<HoroscopeInfo>) {
         horoscopeList = list
-        notifyDataSetChanged()
+        notifyDataSetChanged() //notifica que los datos han cambiado, no es optimo cuando vas a modificar partes de un listado
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HoroscopeViewHolder {
