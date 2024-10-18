@@ -40,7 +40,7 @@ class HoroscopeFragment : Fragment() {
 
     private fun initList() {
         horoscopeAdapter = HoroscopeAdapter(onItemSelected = {
-            Toast.makeText(context, getString(it.name), Toast.LENGTH_LONG).show()
+            Toast.makeText(context, getString(it.name), Toast.LENGTH_SHORT).show()
         })
 
         binding.rvHoroscope.apply {
