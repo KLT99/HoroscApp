@@ -12,7 +12,6 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.klt.horoscapp.databinding.FragmentHoroscopeBinding
 import com.klt.horoscapp.ui.horoscope.Adapter.HoroscopeAdapter
 import dagger.hilt.android.AndroidEntryPoint
@@ -41,7 +40,7 @@ class HoroscopeFragment : Fragment() {
 
     private fun initList() {
         horoscopeAdapter = HoroscopeAdapter(onItemSelected = {
-            Toast.makeText(context, getString(it.name), Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, getString(it.name), Toast.LENGTH_LONG).show()
         })
 
         binding.rvHoroscope.apply {
